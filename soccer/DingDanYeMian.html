@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>订单</title>
+	<!--移动端meta设置 开始-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- 删除苹果默认的工具栏和菜单栏 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!-- 设置苹果工具栏颜色 -->
+    <meta name="format-detection" content="telphone=no, email=no">
+    <!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+    <!-- 启用360浏览器的极速模式(webkit) -->
+    <meta name="renderer" content="webkit">
+    <!-- 避免IE使用兼容模式 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+    <meta name="HandheldFriendly" content="true">
+    <!-- 微软的老式浏览器 -->
+    <meta name="MobileOptimized" content="320">
+    <!-- uc强制竖屏 -->
+    <meta name="screen-orientation" content="portrait">
+    <!-- QQ强制竖屏 -->
+    <meta name="x5-orientation" content="portrait">
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <!-- UC应用模式 -->
+    <meta name="browsermode" content="application">
+    <!-- QQ应用模式 -->
+    <meta name="x5-page-mode" content="app">
+    <!-- windows phone 点击无高光 -->
+    <meta name="msapplication-tap-highlight" content="no">
+    <!-- 适应移动端end -->
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<link rel="stylesheet" type="text/css" href="css/all.css">	
+</head>
+<body class="mhom">
+	<div class="dingdan-main">
+		<div class="xp-ui-tab ">		
+			<ul class="tab-nav fground">
+				<li class="current">订场</li>
+				<li>约</li>
+			</ul>
+			<ul class="tab-content">
+		    	<!-- 订场 -->
+				<li class="current">					
+					<div class="xp-cont-box">
+						<p class="yueyuexin m0a pt50 mt50">
+							<img src="image/yueyuexin_03.jpg" width="100%">
+						</p>
+						<p class="fzrem0 tc mt50" style="color:#ee4023">您还没有比赛订单，可点击下方按钮预定场地!</p>
+						<p class="tc fzrem0 mt20">
+						    <span class="xp-yuyuebtn">预定场地</span>	
+						</p>
+					</div>
+				</li>
+				<!-- 约 -->
+				<li>
+					<div class="server-tabs flexbox">
+						<div class="flexbox-1 pt5 pb5 sd-right curts">全部</div>
+						<div class="flexbox-1 pt5 pb5 sd-right">未服务</div>
+						<div class="flexbox-1 pt5 pb5 ">已服务</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	 <!-- 底部导航 S-->
+	<div class="nav-tabs">
+		<div class="nav-items">
+			<a href="javascript:void(0)">
+				<p class="pt10 pb10">
+					<i class="icon-panel">
+						<img src="image/nav-home.png" width="100%">
+					</i>
+					<span class="fzrem">首页</span>
+				</p>
+			</a>
+		</div>
+		<div class="nav-items">
+			<a href="javascript:void(0)">
+				<p class="pt10 pb10">
+					<i class="icon-panel">
+						<img src="image/nav-clueb.png" width="100%">
+					</i>
+					<span class="fzrem">球队</span>
+				</p>
+			</a>	
+		</div>		
+		<div class="nav-items">
+			<a href="javascript:void(0)">
+				<p class="pt10 pb10">
+					<i class="icon-panel">
+						<img src="image/nav-list.png" width="100%">
+					</i>
+					<span class="fzrem">订单</span>
+				</p>
+		    </a>
+		</div>		
+		<div class="nav-items">
+			<a href="javascript:void(0)">
+				<p class="pt10 pb10">
+					<i class="icon-panel">
+						<img src="image/nav-my.png" width="100%">
+					</i>
+					<span class="fzrem">我的</span>
+				</p>
+			</a>	
+		</div>
+	</div>
+	 <!--底部导航 E-->
+</body>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/tabs.js"></script>
+<script type="text/javascript">		
+	  $(function(){
+	  	 $(".server-tabs").children().on('touchstart',function(){debugger
+	  	 	$(this).addClass('curts').siblings().removeClass('curts');
+	  	 }); 
+	 	$(window).resize(function () { 
+				location.reload();		
+		});
+	   	 $('.xp-ui-tab').tabSwiper();
+    });
+</script>
+</html>

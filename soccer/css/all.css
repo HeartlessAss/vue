@@ -1,0 +1,623 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors  (you@example.org)
+ * @date    2016-11-13 18:50:44
+ * @version $1.0
+ */
+ /*================首页=======================*/
+/*index-banner*/
+.swiper-container {
+	width: 100%;
+	height: 100%;
+}
+.swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+	/* Center slide text vertically */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+.swiper-slide a {
+	width: 100%;
+	display: block;
+}
+.swiper-slide img {
+	width: 100%;
+}
+/*xh-link-list*/
+.xh-link-list {
+	background: white;
+	padding: 10px;
+}
+.xh-link-list .link-list-item .link-list-info {
+}
+.xh-link-list .link-list-item .link-list-info a {
+	display: block;
+	text-align: center;
+}
+.xh-link-list .link-list-item .link-list-info a img {
+	width: 60px;
+	margin: 0 auto;
+}
+.xh-link-list .link-list-item .link-list-info a span {
+	display: block;
+	font-size: 1rem;
+	color: #000;
+}
+/*xh-index-new*/
+.xh-index-new {
+	background: url("../image/index-news-bg.png") no-repeat;
+	padding: 36% 20%;
+	background-size: 100%;
+	position: relative;
+}
+.xh-index-new .evt_award_list_wrap {
+	position: absolute;
+	top: 32%;
+	left: 15%;
+	right: 15%;
+	bottom: 10px;
+	overflow: hidden;
+}
+.xh-index-new .index-new-list {
+/*position: absolute;*/
+    /*top: 32%;*/
+    /*left: 15%;*/
+    /*right:15%;*/
+}
+.xh-index-new .index-new-list .index-list-item {
+	width: 100%;
+	height: 1.2rem;
+	line-height: 1.2rem;
+	padding: 0 10px;
+}
+.xh-index-new .index-new-list .index-list-item a {
+	font-size: 0.8rem;
+	color: white;
+	display: block;
+}
+.xh-index-new .index-new-list .index-list-item:nth-child(2n+1) {
+	background: rgba(255,255,255,0.2);
+}
+/*xh-index-war*/
+.xh-index-war {
+	width: 100%;
+}
+.xh-index-war .index-war-pic {
+	display: block;
+}
+.xh-index-war .index-war-pic img {
+	width: 100%;
+	float: left;
+}
+/*================球场页面=======================*/
+.xh-toggle-select {
+	position: relative;
+	background: white;
+}
+.xh-toggle-select .toggle-select-item {
+	text-align: center;
+}
+.xh-toggle-select .toggle-select-item .select-info {
+	position: relative;
+	font-size: 1.1rem;
+	padding: 5px 0;
+}
+.xh-toggle-select .toggle-select-item .select-info::after {
+	position: absolute;
+	content: "";
+	height: 20px;
+	width: 20px;
+	right: 10px;
+	top: 10px;
+	background: url("../image/select-icon.png") no-repeat;
+	background-size: 14px 10px;
+}
+.xh-toggle-select .address-select li {
+	border-bottom: 1px solid #adacac;
+	font-size: 1.1rem;
+}
+.xh-toggle-select .address-select li a {
+	display: block;
+	padding: 5px 10px;
+}
+.xh-toggle-select .address-select li:nth-child(2n+1) {
+	background: #dadada;
+}
+.address-select {
+	display: none;
+}
+.address-select.select-active {
+/*display: block;*/
+}
+.stadium-part {
+	margin-bottom: 45px;
+}
+/*================登入页面=======================*/
+
+.login-wrap {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url(../image/login_bg.jpg) repeat-y;
+	background-size: contain;
+}
+.login-wrap .login-title {
+	font-size: 1.56rem;
+	text-align: center;
+	color: #fff;
+	padding: 80px 0;
+}
+.login-wrap .login-box {
+	width: 90%;
+	border: 1px solid #333;
+	border-radius: 6px;
+	overflow: hidden;
+	box-shadow: 8px 15px 8px #333;
+}
+.longin-t .login-user {
+	font-weight: bold;
+	font-size: '微软雅黑';
+}
+.login-wrap .login-box .login-header {
+	width: 100%;
+	background: url(../image/login-h.png) repeat-y;
+	background-size: contain;
+}
+.login-wrap .login-box .login-header .longin-t {
+	font-size: 0.5rem;
+	color: #fff;
+}
+.login-wrap .login-box .login-content {
+	padding-top: 50px;
+	width: 100%;
+	background: url(../image/login-c.jpg) repeat-x;
+	background-size: contain;
+	color: #fff
+}
+.login-wrap .login-box .login-content .inputwrap {
+	border: 1px solid #80d5de;
+	background: #277684;
+	opacity: 0.8;
+	overflow: hidden;
+}
+.login-wrap .login-box .login-content .inputwrap input {
+	border: none;
+	background: none;
+	padding-left: 10px;
+	color: #fff;
+}
+.login-wrap .login-box .login-content .login-button {
+	background: url(../image/truebut_03.png) no-repeat;
+	background-size: cover;
+	display: block;
+	width: 40px;
+	height: 18px;
+}
+/*============================预约球队页面===============================*/
+.subscribe-main {
+	padding: 10px;
+	background: #fff;
+}
+.subscribe-main .heade-team-pic {
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	overflow: hidden;
+	display: inline-block;
+	position: absolute;
+}
+.subscribe-main .image-icons {
+	left: 5px;
+}
+.subscribe-main .list-item .item-name {
+	font-size: 1rem;
+	color: #020202
+}
+.subscribe-main .title-mos {
+	top: 13px;
+	font-size: 1rem;
+	color: #666
+}
+/****************约战球场信息页面*****************************/
+/****************************xh-stadium****************************/
+.xh-stadium {
+	width: 100%;
+	background: white;
+}
+.xh-stadium .xh-stadium-link {
+	width: 80%;
+	display: block;
+	margin: 0 auto;
+}
+.xh-stadium .xh-stadium-link img {
+	width: 100%;
+	height: 100%;
+}
+.xh-stadium-detail {
+	background: #eaeaea;
+}
+.xh-stadium-detail .stadium-article {
+	background: white;
+	padding: 0.8rem;
+}
+.xh-stadium-detail .stadium-article h2 {
+	font-size: 1.1rem;
+}
+.xh-stadium-detail .stadium-article article {
+	color: #a8a8a8;
+	font-size: 1rem;
+	padding: 1rem 0;
+}
+.xh-stadium-detail .stadium-icon {
+	float: right;
+	height: 20px;
+	width: 15px;
+	background: url("../image/list-item-icon.png") no-repeat;
+	background-size: 15px 20px;
+	margin-left: 5px;
+}
+.btn-group {
+	padding: 40px 0;
+	background: white;
+}
+/****************************约战宝贝页面****************************/
+.xh-dotey {
+	width: 100%;
+	background: white;
+}
+.xh-dotey .xh-dotey-link {
+	width: 100%;
+	display: block;
+	margin: 0 auto;
+}
+.xh-dotey .xh-dotey-link img {
+	width: 100%;
+	height: 100%;
+}
+/*约战球员*/
+.xh-public-graphic {
+	padding: 10px;
+	margin-bottom: 50px;
+}
+/***************************球员裁判宝贝进驻页面****************************/
+/****************************图片选择**************************************/
+.xh-input-file {
+	padding-bottom: 10px;
+	background: #eaeaea;
+}
+.input-file-wrap {
+	padding: 10px;
+}
+.xh-input-file .input-file {
+	height: 60px;
+	width: 60px;
+	overflow: hidden;
+	border: 2px dotted #dadada;
+	border-radius: 5px;
+	position: relative;
+	vertical-align: middle;
+}
+.xh-input-file .input-file::after, .xh-input-file .input-file::before {
+	content: "";
+	position: absolute;
+	background: #bcbcbc;
+	left: 50%;
+	top: 50%;
+	transform: translate3d(-50%, -50%, 0);
+}
+.xh-input-file .input-file::after {
+	height: 40%;
+	width: 3px;
+}
+.xh-input-file .input-file::before {
+	height: 3px;
+	width: 40%;
+}
+.xh-input-file .input-file .files {
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+}
+.input-file-desc {
+	font-size: 1rem;
+	color: #737373;
+}
+.stadium-content {
+	width: 100%;
+	padding: 10px 0;
+	font-size: 1rem;
+}
+/*============================预约球队页面===============================*/
+.subscribe-main {
+	padding: 10px;
+	background: #fff;
+}
+.subscribe-main .heade-team-pic {
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	overflow: hidden;
+	display: inline-block;
+	position: absolute;
+}
+.subscribe-main .image-icons {
+	left: 5px;
+}
+.subscribe-main .list-item .item-name {
+	font-size: 1rem;
+	color: #020202
+}
+.subscribe-main .title-mos {
+	top: 13px;
+	font-size: 1rem;
+	color: #666
+}
+/*===================================球队设置===========================================*/
+.choose-box {
+	border: 0;
+	font-size: 1rem;
+	text-align: right;
+}
+.xp-setSwitch-js {
+	width: 62px;
+	height: 20px;
+	border: 2px solid #f76900;
+	position: absolute;
+	right: 10px;
+	top: 12px
+}
+.xp-setSwitch-js .xp-slider-box {
+	height: 100%;
+	width: 31px;
+	background: #f16228;
+}
+/*========================================球队订单====================================================*/
+.xp-setteam .ui-button-box {
+	padding-top: 150px;
+}
+.xp-setteam .selcheed {
+	width: 14px;
+	height: 14px;
+	display: inline-block;
+	background: url(../image/select-xz_13.jpg) no-repeat;
+	background-size: contain;
+	vertical-align: middle;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+.xp-setteam .selcheed.curt {
+	background: url(../image/select-def_11.jpg);
+	background-size: contain;
+	vertical-align: middle;
+}
+/*===========================================球队申请========================================================*/
+.xp-cation-main .cation-pic-box {
+	width: 100%;
+	height: 210px;
+	background: #fff;
+}
+.xp-cation-main .cation-pic-box .add-pic-box {
+	width: 45px;
+	height: 45px;
+	color: #737373;
+	left: 50%;
+	margin-left: -23.5px;
+	top: 80px;
+}
+.xp-cation-main .cation-pic-box .add-textms {
+	display: block;
+	width: 250px;
+	height: 30px;
+	margin-left: -60px;
+	font-size: 0.8rem;
+	font-family: "微软雅黑";
+}
+.text-box {
+	height: 100px;
+	width: 100%;
+}
+/*============================n宝贝进驻==========================================*/
+.xp-baobei-main .cation-pic-box {
+	background: #fff;
+	width: 100%;
+	padding: 10px 10px;
+}
+.xp-baobei-main .add-pic-box {
+	width: 45px;
+	height: 45px;
+}
+.xp-baobei-main .add-textms {
+	display: block;
+	width: 230px;
+	height: 30px;
+	margin-left: 15px;
+	margin-top: 14px;
+	color: #737373;
+	font-family: "微软雅黑";
+}
+/*=======================订单服务=========================================*/
+.dingdan-main {
+	padding: 20px;
+}
+.xp-ui-tab {
+	overflow: hidden;
+	width: 100%;
+}
+.xp-ui-tab .tab-nav {
+	width: 100%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+.xp-ui-tab .tab-nav li {
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	text-align: center;
+	padding: 10px;
+	position: relative;
+	font-size: 1.2rem;
+	color: #333
+}
+.xp-ui-tab .tab-nav li.current {
+	color: #e14725;
+}
+.xp-ui-tab .tab-nav li.current:before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	left: 0;
+	bottom: 0;
+	border-bottom: 3px solid #f15f4d;
+}
+.tab-content {
+	display: -webkit-box;
+	-webkit-transition: all 0.4s ease-out;
+}
+.tab-content li {
+	min-height: 400px;
+	padding: 20px;
+}
+.tab-content .server-tabs {
+	width: 90%;
+	overflow: hidden;
+	border: 1px solid #ee4023;
+	border-radius: 15px;
+	text-align: center;
+	margin: 0 auto;
+	color: #ee4023;
+	font-size: 0.8rem;
+	line-height: 2rem;
+}
+.tab-content .server-tabs .sd-right {
+	border-right: 1px solid #ee4023
+}
+.tab-content .server-tabs .curts {
+	background: #ee4023;
+	color: #fff;
+}
+.tab-content .yueyuexin {
+	width: 55px;
+}
+.tab-content .xp-yuyuebtn {
+	border-radius: 5px;
+	border: 1px solid #ee4023;
+	text-align: center;
+	color: #ee4023;
+	padding: 2px 10px;
+}
+/*=====================================球场二级====================================*/
+.select-qiuchan {
+	padding: 10px 4px 4px 0px;
+	border-bottom: 1px solid #e71f19;
+	width: 80px;
+	position: relative;
+}
+.select-qiuchan::after {
+	content: "";
+	width: 14px;
+	height: 10px;
+	right: 0;
+	top: 16px;
+	display: block;
+	position: absolute;
+	background: url(../image/select-icon.png) right no-repeat;
+	background-size: 14px 10px
+}
+.select-day-wrap {
+	padding: 10px;
+	overflow: hidden;
+	background: #dadada;
+	height: 95px;
+}
+.wrap-week {
+	overflow-x: auto;
+	height: 100px;
+}
+.select-day-wrap .xp-select-box {
+	width: 600px;
+}
+.select-day-wrap .xp-select-box li {
+	width: 75px;
+	height: 75px;
+	border-radius: 2px;
+	border: 1px solid #eee;
+	background: #fff;
+	text-align: center;
+	float: left;
+	margin-right: 10px;
+}
+.xp-select-box .week-title {
+	font-size: 1rem;
+	color: #7a7a7a;
+}
+.xp-select-box .date-days {
+	font-size: 0.8rem;
+	color: #7a7a7a;
+	margin-bottom: 2px;
+}
+.xp-select-box .week-btns {
+	font-size: 1rem;
+	font-size: 0.8rem;
+	border: 1px solid #ff6c00;
+	padding: 1px 6px;
+	border-radius: 4px;
+	color: #ff6c00
+}
+.xp-contact-lis {
+	background: url(../image/right-adp_03.jpg) center right 20% no-repeat;
+	background-size: 9px 10px;
+}
+.xp-contact-lis .icon-phone, .icon-address {
+	width: 15px;
+	height: 15px;
+	left: -30px;
+	top: 12px;
+}
+.flowrs-list {
+	display: inline-block;
+	vertical-align: bottom;
+}
+.flowrs-list li {
+	float: left;
+	width: 12px;
+	height: 16px;
+	margin-right: 10px;
+}
+/*=================================场次预定=======================================*/
+.xp-teams-lists .teams-boxs {
+	height: 100%;
+}
+.xp-teams-lists .field-team {
+	top: -45px;
+	text-align: center;
+	font-size: 0.8rem;
+	width: 60px;
+}
+.xp-teams-lists .xp-week-date {
+	top: 50%;
+	margin-top: -10px;
+	padding-left: 10px;
+}

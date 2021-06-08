@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>球队设置</title>
+	<!--移动端meta设置 开始-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- 删除苹果默认的工具栏和菜单栏 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!-- 设置苹果工具栏颜色 -->
+    <meta name="format-detection" content="telphone=no, email=no">
+    <!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+    <!-- 启用360浏览器的极速模式(webkit) -->
+    <meta name="renderer" content="webkit">
+    <!-- 避免IE使用兼容模式 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+    <meta name="HandheldFriendly" content="true">
+    <!-- 微软的老式浏览器 -->
+    <meta name="MobileOptimized" content="320">
+    <!-- uc强制竖屏 -->
+    <meta name="screen-orientation" content="portrait">
+    <!-- QQ强制竖屏 -->
+    <meta name="x5-orientation" content="portrait">
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <!-- UC应用模式 -->
+    <meta name="browsermode" content="application">
+    <!-- QQ应用模式 -->
+    <meta name="x5-page-mode" content="app">
+    <!-- windows phone 点击无高光 -->
+    <meta name="msapplication-tap-highlight" content="no">
+    <!-- 适应移动端end -->
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<link rel="stylesheet" type="text/css" href="css/all.css">
+</head>
+<body class="mhome">
+<!-- 信息填写 S-->
+	<div class="xp-setteam">
+		<form action="###">
+			<ul class="list-group clearfix ">
+				<li class="list-item cross-line ">
+					<p  class="list-item-link clearfix">
+						<span class="">球队名称</span>
+						<input type="text" name="" class="fzrem pl20" placeholder="请输入球队名称">
+						
+					</p>
+				</li>
+				<li class="list-item cross-line ">
+					<p  class="list-item-link clearfix">
+						<span class="">球队标志</span>
+						<select class="fzrem pl20 wp4 choose-box fr">
+							<option>球队标志1</option>
+							<option>球队标志2</option>
+							<option>球队标志3</option>
+						 </select>
+						 <i class="list-icons-right"></i>
+					</p>
+				</li>
+				<li class="list-item cross-line ">
+					<p  class="list-item-link clearfix">
+						<span class="">秋衣颜色</span>
+						<select class="fzrem pl20 wp4 choose-box fr">
+							<option>红色</option>
+							<option>红色</option>
+							<option>红色</option>
+						 </select>
+						 <i class="list-icons-right"></i>
+					</p>
+				</li>
+			</ul>
+			<ul class="list-group clearfix mt20">
+				<li class="list-item cross-line ">
+					<p  class="list-item-link clearfix">
+						<span class="">设为默认球队</span>
+					</p>
+					<div class="xp-setSwitch-js">
+						<div class="xp-slider-box pa posi-l0"></div>	
+					</div>
+				</li>
+			</ul>
+			<p class=" mt40">
+				<span class="ui-buttons-tame">
+					确定
+				</span>
+		   </p>
+		</form>
+	</div>
+<!-- 信息填写 E-->
+</body>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+			$.fn.switchOpen = function (){ 				
+				 var $this = $(this);
+				 $this.on('touchstart' ,function(){
+						var $thischild = $this.find('.xp-slider-box');	
+					if($this.hasClass('right')){					
+						$thischild.css({right:"inherit",left:0});
+						$this.removeClass('right');
+					}else{
+						$thischild.css({left:"inherit",right:0});
+						$this.addClass('right');
+					}								
+				  });
+				}
+		$(".xp-setSwitch-js").switchOpen();
+		
+	})
+
+
+</script>
+</html>

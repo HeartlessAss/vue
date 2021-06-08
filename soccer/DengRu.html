@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>登入</title>
+	<!--移动端meta设置 开始-->
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<!-- 删除苹果默认的工具栏和菜单栏 -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<!-- 设置苹果工具栏颜色 -->
+	<meta name="format-detection" content="telphone=no, email=no">
+	<!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+	<!-- 启用360浏览器的极速模式(webkit) -->
+	<meta name="renderer" content="webkit">
+	<!-- 避免IE使用兼容模式 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+	<meta name="HandheldFriendly" content="true">
+	<!-- 微软的老式浏览器 -->
+	<meta name="MobileOptimized" content="320">
+	<!-- uc强制竖屏 -->
+	<meta name="screen-orientation" content="portrait">
+	<!-- QQ强制竖屏 -->
+	<meta name="x5-orientation" content="portrait">
+	<!-- UC强制全屏 -->
+	<meta name="full-screen" content="yes">
+	<!-- QQ强制全屏 -->
+	<meta name="x5-fullscreen" content="true">
+	<!-- UC应用模式 -->
+	<meta name="browsermode" content="application">
+	<!-- QQ应用模式 -->
+	<meta name="x5-page-mode" content="app">
+	<!-- windows phone 点击无高光 -->
+	<meta name="msapplication-tap-highlight" content="no">
+	<!-- 适应移动端end -->
+
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<link rel="stylesheet" type="text/css" href="css/all.css">
+	<style type="text/css">
+body {
+	background: url(../image/login_bg.jpg) repeat-y;
+	background-size: contain;
+}
+</style>
+	</head>
+	<body class="mhome">
+<!-- 登入 S-->
+<div class="login-wrap">
+      <h1 class="login-title">球队进驻</h1>
+      <div class="login-box m0a">
+    <div class="login-header"> <span class="longin-t"> <i class="pl20 pr5"><img src="image/right-ht.png"></i> <span class="login-user">USER</span>&nbsp LOGIN </span> </div>
+    <div class="login-content pb10">
+          <form action="#" style="margin-top:-40px;">
+        <div class="flexbox pl20 pb5">
+              <div class="flexbox-1">账号：</div>
+              <div class="flexbox-2">
+            <div class="inputwrap ml20 wp6">
+                  <input type="text" name="">
+                </div>
+          </div>
+            </div>
+        <div class="flexbox pt10 pl20">
+              <div class="flexbox-1">密码：</div>
+              <div class="flexbox-2">
+            <div class="inputwrap ml20 wp6">
+                  <input type="password" name="">
+                </div>
+          </div>
+            </div>
+        <div class="flexbox pt10 pl20">
+              <div class="flexbox-1"></div>
+              <div class="flexbox-2">
+            <p class="wp6 ml20 tr"> 用户注册 </p>
+          </div>
+            </div>
+        <div class="flexbox pt5 pl20">
+              <div class="flexbox-1">請輸入您在此圖片中看到的數字</div>
+              <div class="flexbox-2">
+            <div class="inputwrap ml20 wp6">
+                  <input type="text " name="">
+                </div>
+            <div class="seccode-box wp6 ml20 mt10 fl">
+                  <div></div>
+                  <img src="image/yanzhenma_26.jpg" width="100%"> </div>
+            <input class="fl mt15 ml10 login-button" type="button" name="" value="">
+          </div>
+            </div>
+      </form>
+        </div>
+  </div>
+      <div class="pt50"> <img src="image/zuqiu.png" width="100%"> </div>
+    </div>
+<!-- 登入 E--> 
+<!-- 底部导航 S-->
+<div class="nav-tabs">
+      <div class="nav-items"> <a href="javascript:void(0)">
+        <p class="pt10 pb10"> <i class="icon-panel"> <img src="image/nav-home.png" width="100%"> </i> <span class="fzrem">首页</span> </p>
+        </a> </div>
+      <div class="nav-items"> <a href="javascript:void(0)">
+        <p class="pt10 pb10"> <i class="icon-panel"> <img src="image/nav-clueb.png" width="100%"> </i> <span class="fzrem">球队</span> </p>
+        </a> </div>
+      <div class="nav-items"> <a href="javascript:void(0)">
+        <p class="pt10 pb10"> <i class="icon-panel"> <img src="image/nav-list.png" width="100%"> </i> <span class="fzrem">订单</span> </p>
+        </a> </div>
+      <div class="nav-items"> <a href="javascript:void(0)">
+        <p class="pt10 pb10"> <i class="icon-panel"> <img src="image/nav-my.png" width="100%"> </i> <span class="fzrem">我的</span> </p>
+        </a> </div>
+    </div>
+<!--底部导航 E--> 
+</body>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<!-- 悬浮插件 -->
+	<script type="text/javascript" src="js/selectItem.js"></script>
+	<script type="text/javascript">
+ 	$(function(){
+ 	/*
+	 * @type{number}  intervals:菜单间隔距离 
+	 * @type{booleen} isSwiper :是否拖动
+	 * @type{number}  animate: :动画速度
+	 * @type{booleen} isOpen:  :是否展开
+	 */
+		$(".selectItem").selectItem({
+				intervals:-12, 
+				isSwiper:true,		
+				animate:100,
+			    isOpen:true,
+		});
+ 	})
+ </script>
+</html>
